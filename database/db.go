@@ -16,6 +16,11 @@ import (
 	"gorm.io/gorm/logger"
 )
 
+import (
+  "gorm.io/driver/postgres"
+  "gorm.io/gorm"
+)
+
 var db *gorm.DB
 
 var initializers = []func() error{
